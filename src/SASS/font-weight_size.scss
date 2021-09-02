@@ -1,0 +1,30 @@
+/*font-size && weight*/
+/*font-weight*/
+$modifyFontWeight: (
+    hairline-weight:100,
+    thin-weight:200,
+    light-weight:300,
+    normal-weight:400,
+    medium-weight:500,
+    semibold-weight:600,
+    bold-weight:700,
+    xbold-weight:800,
+    black-weight:900
+);
+
+/*font-size*/
+$modifyFontSize: (
+   font-size-small: 12px,
+   font-size-regular: 14px,
+   font-size-large: 16px
+);
+@function weight($font-weight){
+    @return map-get( $modifyFontWeight, $font-weight)
+}
+@function size($font-size){
+    @return map-get( $modifyFontSize, $font-size)
+}
+
+
+
+

@@ -1,0 +1,11 @@
+/*modify colors*/
+$colors: (
+  main: #fff,
+  primary: #0A0404,
+  accent: #d40606,
+  tectra: #a11a1c,
+  maroon: #53181c,
+);
+@function color($color-name){
+  @return map-get($colors, $color-name)
+}

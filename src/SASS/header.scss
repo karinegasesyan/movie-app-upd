@@ -1,0 +1,38 @@
+.header{
+    background-color: color(primary);
+    width: 100%;
+    height: 60px;
+    padding: 0 4px*8;
+    position: relative;
+    border-bottom: 2px solid;
+    border-color: color(accent);
+    .logo {
+      width: 40px;
+      height: auto;
+      float: left;
+      margin-top: 12px;
+      margin-right: 4px*6;
+    }
+    .links{
+      display: block;
+      padding-top: 4px*6;
+  
+      li {
+        float: left;
+        padding-right: 4px*6;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color:color(main);
+          transition: .1s ease-in;
+          text-transform: capitalize;
+  
+          &:hover{
+            color: color(accent);
+            text-shadow: 2px 2px 2px rgba(212, 6, 6, .6);
+            
+          }
+        }
+      }
+    }
+  }
